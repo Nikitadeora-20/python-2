@@ -6,7 +6,7 @@ def prefix_to_postfix(expression):
 
     # Traverse the expression from right to left
     for char in reversed(expression):
-        if char.isalnum():
+        if char.isalnum():#in python isalnum used for a-z , A-Z , 0-9 operand 
             stack.append(char)
         elif is_operator(char):
             if len(stack) < 2:
